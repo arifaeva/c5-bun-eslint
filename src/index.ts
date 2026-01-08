@@ -2,8 +2,7 @@ import { Elysia } from "elysia";
 
 const app = new Elysia()
   .get("/", () => {
-    const data = "hello!"; // unused -> dirty code
-    console.log(data); // log vital data -> exposed
+    const isValid = true;
 
     return "Hello Elysia!";
   })
