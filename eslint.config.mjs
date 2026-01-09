@@ -10,6 +10,11 @@ export default defineConfig(
   {
     rules: {
       "no-console": "off",
+      "no-constant-condition": ["error", { checkLoops: false }],
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+      ],
     },
   }
 );
