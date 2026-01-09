@@ -16,5 +16,6 @@ export default {
         "revert",
       ],
     ],
+    "subject-min-length": [2, "always", 10],
   },
 };
